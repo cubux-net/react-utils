@@ -1,0 +1,154 @@
+{
+  "name": "@cubux/react-utils",
+  "version": "0.0.1",
+  "description": "Utility functions related to React",
+  "author": {
+    "name": "Vovan-VE",
+    "email": "vovan-ve@yandex.ru"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cubux-net/react-utils.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cubux-net/react-utils/issues"
+  },
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.esm.js"
+      },
+      "require": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      }
+    },
+    "./dev": {
+      "import": {
+        "types": "./dist/dev/index.d.ts",
+        "default": "./dist/dev/index.esm.js"
+      },
+      "require": {
+        "types": "./dist/dev/index.d.ts",
+        "default": "./dist/dev/index.js"
+      }
+    },
+    "./is": {
+      "import": {
+        "types": "./dist/is/index.d.ts",
+        "default": "./dist/is/index.esm.js"
+      },
+      "require": {
+        "types": "./dist/is/index.d.ts",
+        "default": "./dist/is/index.js"
+      }
+    },
+    "./svg": {
+      "import": {
+        "types": "./dist/svg/index.d.ts",
+        "default": "./dist/svg/index.esm.js"
+      },
+      "require": {
+        "types": "./dist/svg/index.d.ts",
+        "default": "./dist/svg/index.js"
+      }
+    }
+  },
+  "types": "dist/index.d.ts",
+  "typesVersions": {
+    "*": {
+      "dev": [
+        "dist/dev/index.d.ts"
+      ],
+      "svg": [
+        "dist/svg/index.d.ts"
+      ]
+    }
+  },
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "files": [
+    "dist",
+    "CHANGELOG.md",
+    "LICENSE",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=14"
+  },
+  "scripts": {
+    "build": "dts build --entry src/index.ts --entry 'src/*/index.ts'",
+    "start": "dts watch --entry src/index.ts --entry 'src/*/index.ts'",
+    "prepare": "npm run build",
+    "test": "tsc --noEmit && dts test",
+    "test:watch": "npm test -- --watch",
+    "test:coverage": "npm test -- --coverage",
+    "analyze": "size-limit --why",
+    "size": "size-limit",
+    "lint": "dts lint"
+  },
+  "peerDependencies": {
+    "@types/react": ">=17",
+    "@types/react-is": ">=17",
+    "react": ">=17",
+    "react-is": ">=17"
+  },
+  "peerDependenciesMeta": {
+    "@types/react-is": {
+      "optional": true
+    },
+    "react-is": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@size-limit/preset-small-lib": "^8.0.0",
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^12.1.5",
+    "@tsconfig/create-react-app": "^1.0.2",
+    "@tsconfig/recommended": "^1.0.1",
+    "@types/react": "^17",
+    "@types/react-dom": "^17",
+    "@types/react-is": "^17",
+    "dts-cli": "^1.5.2",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "react": "^17",
+    "react-dom": "^17",
+    "react-is": "^17",
+    "size-limit": "^8.0.0",
+    "tslib": "^2.4.0",
+    "typescript": "^4.7.4"
+  },
+  "jest": {
+    "testEnvironment": "jsdom",
+    "testPathIgnorePatterns": [
+      "<rootDir>/dist/",
+      "<rootDir>/examples/",
+      "<rootDir>/node_modules/"
+    ]
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,ts,tsx,json}": [
+      "prettier --write"
+    ]
+  },
+  "prettier": {
+    "printWidth": 80,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "all"
+  },
+  "size-limit": [
+    {
+      "path": "dist/index.cjs.production.min.js",
+      "limit": "10 KB"
+    },
+    {
+      "path": "dist/index.esm.js",
+      "limit": "10 KB"
+    }
+  ]
+}

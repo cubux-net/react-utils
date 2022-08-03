@@ -1,0 +1,28 @@
+{
+  "name": "example",
+  "private": true,
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "vite",
+    "build": "vite build"
+  },
+  "dependencies": {
+    "@cubux/react-utils": "../..",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-is": "^18"
+  },
+  "alias": {
+    "@types/react-is": "../node_modules/@types/react-is",
+    "scheduler/tracing": "../node_modules/scheduler/tracing-profiling"
+  },
+  "devDependencies": {
+    "typescript": "~4.7",
+    "vite": "latest",
+    "vite-preset-react": "latest"
+  }
+}

@@ -1,0 +1,232 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`flipH default 1`] = `
+<DocumentFragment>
+  <svg
+    fill="currentColor"
+    height="16"
+    style="transform: scaleX(-1);"
+    viewBox="0 0 16 16"
+    width="16"
+  >
+    <path
+      d="M2,5 h12 v6 z"
+    />
+  </svg>
+</DocumentFragment>
+`;
+
+exports[`flipH extra 1`] = `
+<DocumentFragment>
+  <svg
+    fill="currentColor"
+    height="16"
+    style="transform-origin: 40%, 40%; transform: scaleX(-1), rotate(30deg);"
+    version="1.0"
+    viewBox="0 0 16 16"
+    width="16"
+  >
+    <path
+      d="M2,5 h12 v6 z"
+    />
+  </svg>
+</DocumentFragment>
+`;
+
+exports[`flipV default 1`] = `
+<DocumentFragment>
+  <svg
+    fill="currentColor"
+    height="16"
+    style="transform: scaleY(-1);"
+    viewBox="0 0 16 16"
+    width="16"
+  >
+    <path
+      d="M2,5 h12 v6 z"
+    />
+  </svg>
+</DocumentFragment>
+`;
+
+exports[`flipV extra 1`] = `
+<DocumentFragment>
+  <svg
+    fill="currentColor"
+    height="16"
+    style="transform-origin: 40%, 40%; transform: scaleY(-1), rotate(30deg);"
+    version="1.0"
+    viewBox="0 0 16 16"
+    width="16"
+  >
+    <path
+      d="M2,5 h12 v6 z"
+    />
+  </svg>
+</DocumentFragment>
+`;
+
+exports[`rot90L default 1`] = `
+<DocumentFragment>
+  <svg
+    fill="currentColor"
+    height="16"
+    style="transform: rotate(-90deg);"
+    viewBox="0 0 16 16"
+    width="16"
+  >
+    <path
+      d="M2,5 h12 v6 z"
+    />
+  </svg>
+</DocumentFragment>
+`;
+
+exports[`rot90L extra 1`] = `
+<DocumentFragment>
+  <svg
+    fill="currentColor"
+    height="16"
+    style="transform-origin: 40%, 40%; transform: rotate(-90deg), rotate(30deg);"
+    version="1.0"
+    viewBox="0 0 16 16"
+    width="16"
+  >
+    <path
+      d="M2,5 h12 v6 z"
+    />
+  </svg>
+</DocumentFragment>
+`;
+
+exports[`rot90R default 1`] = `
+<DocumentFragment>
+  <svg
+    fill="currentColor"
+    height="16"
+    style="transform: rotate(90deg);"
+    viewBox="0 0 16 16"
+    width="16"
+  >
+    <path
+      d="M2,5 h12 v6 z"
+    />
+  </svg>
+</DocumentFragment>
+`;
+
+exports[`rot90R extra 1`] = `
+<DocumentFragment>
+  <svg
+    fill="currentColor"
+    height="16"
+    style="transform-origin: 40%, 40%; transform: rotate(90deg), rotate(30deg);"
+    version="1.0"
+    viewBox="0 0 16 16"
+    width="16"
+  >
+    <path
+      d="M2,5 h12 v6 z"
+    />
+  </svg>
+</DocumentFragment>
+`;
+
+exports[`rot180 default 1`] = `
+<DocumentFragment>
+  <svg
+    fill="currentColor"
+    height="16"
+    style="transform: rotate(180deg);"
+    viewBox="0 0 16 16"
+    width="16"
+  >
+    <path
+      d="M2,5 h12 v6 z"
+    />
+  </svg>
+</DocumentFragment>
+`;
+
+exports[`rot180 extra 1`] = `
+<DocumentFragment>
+  <svg
+    fill="currentColor"
+    height="16"
+    style="transform-origin: 40%, 40%; transform: rotate(180deg), rotate(30deg);"
+    version="1.0"
+    viewBox="0 0 16 16"
+    width="16"
+  >
+    <path
+      d="M2,5 h12 v6 z"
+    />
+  </svg>
+</DocumentFragment>
+`;
+
+exports[`transform callback default 1`] = `
+<DocumentFragment>
+  <svg
+    fill="currentColor"
+    height="16"
+    style="transform: rotate(40deg);"
+    viewBox="0 0 16 16"
+    width="16"
+  >
+    <path
+      d="M2,5 h12 v6 z"
+    />
+  </svg>
+</DocumentFragment>
+`;
+
+exports[`transform callback extra 1`] = `
+<DocumentFragment>
+  <svg
+    fill="currentColor"
+    height="16"
+    style="transform-origin: 40%, 40%; transform: rotate(30deg),scaleX(-1);"
+    version="1.0"
+    viewBox="0 0 16 16"
+    width="16"
+  >
+    <path
+      d="M2,5 h12 v6 z"
+    />
+  </svg>
+</DocumentFragment>
+`;
+
+exports[`transform string default 1`] = `
+<DocumentFragment>
+  <svg
+    fill="currentColor"
+    height="16"
+    style="transform: rotate(30deg);"
+    viewBox="0 0 16 16"
+    width="16"
+  >
+    <path
+      d="M2,5 h12 v6 z"
+    />
+  </svg>
+</DocumentFragment>
+`;
+
+exports[`transform string extra 1`] = `
+<DocumentFragment>
+  <svg
+    fill="currentColor"
+    height="16"
+    style="transform-origin: 40%, 40%; transform: rotate(30deg), scaleX(-1);"
+    version="1.0"
+    viewBox="0 0 16 16"
+    width="16"
+  >
+    <path
+      d="M2,5 h12 v6 z"
+    />
+  </svg>
+</DocumentFragment>
+`;
