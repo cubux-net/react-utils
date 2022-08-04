@@ -1,8 +1,7 @@
 // import 'react-app-polyfill/stable';
 import React, { FC } from 'react';
 import { render } from 'react-dom';
-import { svgRot90L } from '@cubux/react-utils';
-import { SvgFC, svgRot90R } from '@cubux/react-utils/svg';
+import { SvgFC, svgRot90L, svgRot90R } from '@cubux/react-utils';
 
 const SvgIcon: SvgFC = (props) => (
   <svg
