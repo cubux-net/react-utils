@@ -5,6 +5,10 @@ import type {
 } from 'react';
 import { isElement } from 'react-is';
 
+declare module 'react-is' {
+  function isElement(value: any): value is ReactElement;
+}
+
 /**
  * Check whether the given element is an element of the given component
  *
